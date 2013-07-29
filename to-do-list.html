@@ -1,0 +1,29 @@
+<head>
+<title>To Do</title>
+<link rel="stylesheet" href="style.css" />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script type='text/javascript'>
+function newTodo(){
+  var q = document.getElementById('todo_value').value;
+  var output = "<li class='todo'><a href='javascript:;'> "+q+" </a></li>";
+  document.getElementById('output').innerHTML += output;
+  $("a").click(function(e) {     
+  $(this).hide();            
+});
+};
+
+$(function() {
+    $("form").submit(function() { return false; });
+});
+
+</script>
+</head>
+<div id="content">
+<form id="todo_form">
+        <input type="text" name="value" action="javascript:;" id="todo_value"><br>
+        <input type="button" value="Submit" onclick="newTodo()">
+</form>
+
+<ul id = "output">
+</ul>
+</div>

@@ -1,0 +1,43 @@
+input
+{
+	width:350
+}
+
+ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+a
+{
+	display: block;
+	padding: 0px 0px;
+	color: #444444;
+	text-decoration: none;
+	border-right: 2px solid #570091;
+	background: #f8f8f8;
+	width: 350;
+	text-align: right;
+}
+
+a:hover
+{ 
+	background: #570091;
+	color: #f8f8f8;
+}
+
+#content
+{
+	background:#f8f8f8;
+	width: 350;
+	height: 100%;
+	margin: auto;
+	border-right: 1px solid #570091;
+}
